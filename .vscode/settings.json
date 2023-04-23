@@ -1,0 +1,23 @@
+{
+  "cSpell.words": [
+    "autoflush",
+    "conint",
+    "createpost",
+    "EmailStr",
+    "enkasa",
+    "EXPERATION",
+    "fastapi",
+    "isouter",
+    "ondelete",
+    "passlib",
+    "psycopg",
+    "pydantic",
+    "sessionmaker",
+    "signin",
+    "SQLALCHEMY",
+    "sqlalchposts",
+    "userrr"
+  ],
+  "git.ignoreLimitWarning": true,
+  "python.analysis.typeCheckingMode": "off"
+}
