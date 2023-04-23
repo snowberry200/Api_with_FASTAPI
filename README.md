@@ -11,4 +11,8 @@ MODELS DEFIND - {POSTS, USERS, VOTES}
 >>>>>>> first commit
 =======
 # api
+<<<<<<< HEAD
+>>>>>>> first commit
+=======
+# api
 >>>>>>> first commit
