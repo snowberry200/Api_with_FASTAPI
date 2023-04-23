@@ -7,4 +7,8 @@ WITH FASTAPI AND DOING QUERY FROM POSTGRESQL USING SQL AND SQLALCHEMY
 MODELS DEFIND - {POSTS, USERS, VOTES}
 =======
 # api
+<<<<<<< HEAD
+>>>>>>> first commit
+=======
+# api
 >>>>>>> first commit
