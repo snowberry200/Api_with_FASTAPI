@@ -5,14 +5,24 @@ from psycopg2.extras import RealDictCursor
 import time
 from .database import engine
 from . import models
-from .routers import posts,users,auth,vote
+from .routers import posts, users, auth, vote
 from .config import settings
+from fastapi.middleware.cors import CORSMiddleware
 
-
+# we no longer need the command below after successfully running ALEMBIC
 # models.Base.metadata.create_all(bind=engine)
-
-
+origins = ['*']
 app = FastAPI()
+
+# MIDDLEWARE IS BASICALLY A FUNCTION THAT RUN BEFORE EVERY REQUEST
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 app.include_router(posts.router)
 app.include_router(users.router)
 app.include_router(auth.router)
@@ -41,6 +51,4 @@ app.include_router(vote.router)
 #         time.sleep(2)
 
 
-
 # CREATING USERS
-

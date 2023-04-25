@@ -3,6 +3,7 @@ from sqlalchemy import TIMESTAMP, Boolean, Column, Integer, String, text, Foreig
 from sqlalchemy.orm import relationship
 
 
+
 class ORM_Post(Base):
     __tablename__ = "updates"
     id = Column(Integer, primary_key=True, nullable=False)
@@ -24,6 +25,7 @@ class ORM_User(Base):
     password = Column(String, nullable=False)
     created_at = Column(TIMESTAMP(timezone=True),
                         nullable=False, server_default=text('now()'))
+    phone_number = Column(String)
 
 
 class ORM_Vote(Base):
